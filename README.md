@@ -2,6 +2,7 @@
 Case Técnico - SpaceAces
 
 # Requisitos técnicos
+- O projeto apresenta também as DLL's necessárias para facilidade de quem for executar o mesmo.
 - Para executar o projeto é necessário ter uma instância do banco de dados relacional MySQL (Pode ser uma imagem docker).
 - É possível criar a instância do Mysql usando docker atráves do arquivo pré-configurado no projeto: docker-compose.yaml (Execute o comando docker-compose up na raíz do projeto com seu docker em execução)
 - O script de criação do database suas tabelas encontra-se no projeto com o nome dump-spacecaps-202404082144.sql
