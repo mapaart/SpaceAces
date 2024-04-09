@@ -1,0 +1,6 @@
+@SpacecapsCase_HostAddress = http://localhost:5002
+
+GET {{SpacecapsCase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

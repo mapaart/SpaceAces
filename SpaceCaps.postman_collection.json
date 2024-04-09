@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "8257b698-bbc2-4693-b69f-51bb75866cde",
+		"name": "SpaceCaps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34124164"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"teste\",\r\n  \"senha\": \"teste\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Login/valida",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Login",
+						"valida"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Tarefa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "idSolicitante",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste2\",\r\n  \"status\": true,\r\n  \"data\": \"2024-04-08T22:44:42.417Z\",\r\n  \"dataAtualizacao\": \"2024-04-08T22:44:42.417Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Tarefa/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Tarefa",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "idSolicitante",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"teste\",\r\n  \"email\": \"teste@teste\",\r\n  \"senha\": \"teste\",\r\n  \"nivelUserId\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Usuario/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Usuario",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Tarefa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "IdSolicitante",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\":\"7\",\r\n  \"descricao\": \"testando\",\r\n  \"status\": true,\r\n  \"data\": \"2024-04-08T22:44:42.417Z\",\r\n  \"dataAtualizacao\": \"2024-04-08T22:44:42.417Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Tarefa/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Tarefa",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tarefa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "IdSolicitante",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste\",\r\n  \"status\": true,\r\n  \"data\": \"2024-04-08T22:44:42.417Z\",\r\n  \"dataAtualizacao\": \"2024-04-08T22:44:42.417Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Tarefa/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Tarefa",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Tarefa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "IdSolicitante",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste\",\r\n  \"status\": true,\r\n  \"data\": \"2024-04-08T22:44:42.417Z\",\r\n  \"dataAtualizacao\": \"2024-04-08T22:44:42.417Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Tarefa/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Tarefa",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Tarefas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNjE5NDMxLCJleHAiOjE3MTI2MjMwMzEsImlhdCI6MTcxMjYxOTQzMSwiaXNzIjoiU3BhY2VDYXBzQ2FzZSJ9.LwZcKT75XptP_KEsHtMbvLC0C00hlPvLVm3z498BBZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "IdSolicitante",
+						"value": "3",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"descricao\": \"teste\",\r\n  \"status\": true,\r\n  \"data\": \"2024-04-08T22:44:42.417Z\",\r\n  \"dataAtualizacao\": \"2024-04-08T22:44:42.417Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/Tarefa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Tarefa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RlIiwibmJmIjoxNzEyNTQzNjk1LCJleHAiOjE3MTI1NDcyOTUsImlhdCI6MTcxMjU0MzY5NX0.QfWxDxFrtvNxlp33kKGsQjrLyw0vRU6PLJ0NsqrgFx0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5002/api/Usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"Usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
