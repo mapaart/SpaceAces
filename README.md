@@ -110,7 +110,7 @@ Esta é a controller responsável por lidar com operações relacionadas às tar
   {
     "descricao": "string",
     "status": "string"
-  }```
+  }
   
 - **Cabeçalhos de Autorização:** Este endpoint requer um token de acesso válido no cabeçalho de autorização.
 - **Resposta de Sucesso:** Retorna um código de status HTTP 200 OK junto com as informações da tarefa recém-criada.
@@ -126,7 +126,7 @@ Corpo da Requisição:
   "id": "int",
   "descricao": "string",
   "status": "string"
-}```
+}
 
 - **Cabeçalhos de Autorização: Este endpoint requer um token de acesso válido no cabeçalho de autorização.
 - **Resposta de Sucesso: Retorna um código de status HTTP 200 OK junto com as informações da tarefa atualizada.
