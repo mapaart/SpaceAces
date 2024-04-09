@@ -37,8 +37,8 @@ Esta é a controller responsável pela autenticação de usuários na API.
   {
     "usuario": "string",
     "senha": "string"
-  }```
-  
+  }
+  ```
 - **Resposta de Sucesso:** Retorna um código de status HTTP 200 OK junto com um token de acesso válido.
 - **Resposta de Erro:** Retorna um código de status HTTP 401 Unauthorized se as credenciais forem inválidas.
 - **Parâmetros**
@@ -83,7 +83,7 @@ Esta é a controller responsável por lidar com operações relacionadas aos usu
     "email": "string",
     "senha": "string"
   }
-  
+  ```
 - **Resposta de Sucesso:** Retorna um código de status HTTP 200 OK junto com as informações do usuário recém-criado.
 - **Resposta de Erro:** Retorna um código de status HTTP 400 Bad Request se ocorrer algum erro ao criar o usuário.
 ### Parâmetros
@@ -111,7 +111,7 @@ Esta é a controller responsável por lidar com operações relacionadas às tar
     "descricao": "string",
     "status": "string"
   }
-  
+  ```
 - **Cabeçalhos de Autorização:** Este endpoint requer um token de acesso válido no cabeçalho de autorização.
 - **Resposta de Sucesso:** Retorna um código de status HTTP 200 OK junto com as informações da tarefa recém-criada.
 - **Resposta de Erro:** Retorna um código de status HTTP 400 Bad Request se ocorrer algum erro ao criar a tarefa.
@@ -127,7 +127,7 @@ Corpo da Requisição:
   "descricao": "string",
   "status": "string"
 }
-
+```
 - **Cabeçalhos de Autorização: Este endpoint requer um token de acesso válido no cabeçalho de autorização.
 - **Resposta de Sucesso: Retorna um código de status HTTP 200 OK junto com as informações da tarefa atualizada.
 - **Resposta de Erro: Retorna um código de status HTTP 400 Bad Request se ocorrer algum erro ao atualizar a tarefa.
