@@ -82,7 +82,7 @@ Esta é a controller responsável por lidar com operações relacionadas aos usu
     "nome": "string",
     "email": "string",
     "senha": "string"
-  }```
+  }
   
 - **Resposta de Sucesso:** Retorna um código de status HTTP 200 OK junto com as informações do usuário recém-criado.
 - **Resposta de Erro:** Retorna um código de status HTTP 400 Bad Request se ocorrer algum erro ao criar o usuário.
